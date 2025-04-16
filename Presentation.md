@@ -61,74 +61,79 @@ Join our [Discord Community](#) to:
 
 ---
 
+Absolutely! Here's a **refined version of the "How It Works" and "Implementation Details" sections** — now seamlessly integrated and organized just like in your original README style:
+
+---
+
 ## 🔍 **3. Depth-wise Analysis**
 
-This section explains the architectural decisions and internal workings of the system.
+This section explains the architectural decisions, internal logic, and technical structuring behind **AcadVault2.0**.
 
-### 🧩 Architectural & Design Approaches
+---
+
+### 🧩 **How It Works**
+
+AcadVault2.0 runs as a **serverless static web application** powered by **Next.js** using **Static Site Generation (SSG)**. It does not rely on a database or backend; instead, it uses structured `.json` files to simulate a lightweight data layer.
+
+Key functional workflows:
+
+- **Homepage** fetches resource data from JSON and renders it using dynamic React components
+- **Upload page** simulates file submission, allowing users to input metadata (mock functionality for now)
+- **Course-specific pages** are statically generated from course codes and render only relevant materials
+- **Filtering & Searching** allow users to refine resources by tags, course, and title
+- **LocalStorage** is used for features like recent views or bookmarks (fully client-side)
+
+---
+
+### 🛠 **Implementation Details**
+
+#### ⚙️ **Architecture & Design**
 
 - **Component-Based Architecture**  
-  Every UI feature is modular and reusable (e.g., `Navbar`, `UploadForm`, `ResourceCard`).
+  Modular components like `Navbar`, `UploadForm`, and `ResourceCard` ensure reusability and maintainability
 
 - **Responsive & Accessible Design**  
-  Optimized for all screen sizes. Ensures accessibility with semantic HTML, ARIA roles, and proper contrast.
+  Built with Tailwind CSS, responsive across devices, and follows accessibility guidelines (semantic HTML, ARIA roles, color contrast)
 
-- **Scalable Folder Structure**  
-  Code is organized into `pages/`, `components/`, `utils/`, and `data/` for ease of scaling and collaboration.
+- **Folder Structure for Scalability**  
+  Clear separation into `components/`, `pages/`, `utils/`, and `data/` helps organize logic and scale the app
 
 - **Static Site Generation (SSG)**  
-  Improves performance and SEO by pre-rendering pages at build time.
+  Next.js builds the app statically for performance, SEO, and low hosting costs
 
 - **Open Contribution Workflow**  
-  Clear `CONTRIBUTING.md`, beginner-friendly issues, and GitHub Actions for CI ensure a smooth dev experience.
-
-Sure! Here's the **revised “🗂️ Data Structures and Storage”** section **without the examples**, keeping it clean and concise while still being informative:
+  Easy to contribute via GitHub issues and PRs, with CI tools (GitHub Actions) integrated
 
 ---
 
-### 🗂️ **Data Structures and Storage**
+### 🧠 **Data Structures and Storage**
 
-AcadVault2.0 leverages efficient and frontend-friendly data structures to keep the platform lightweight and responsive, especially in the absence of a backend.
+#### 1. **JSON-Based Storage**
+Used to store:
+- Resources (`resourceData.json`)
+- Courses (`courses.json`)
+- Tags (`tags.json`)
 
----
+Easily extendable and ideal for static generation.
 
-#### 📄 **1. JSON-Based Storage**
+#### 2. **Object-Oriented Modeling**
 
-**Used in:** `data/courses.json`, `data/resourceData.json`, `data/tags.json`  
-- Simple, static storage format ideal for static site generation (SSG)  
-- Easily parseable and editable  
-- Can be swapped out for API endpoints in the future
+- **Resource Object**: Contains title, description, course code, file URL, tags, uploader, date, etc.
+- **Course Object**: Maps course codes to descriptive names
+- **Tag Object**: Standardizes tag-based filtering
 
----
+#### 3. **Array Structures**
+Resources, tags, and courses are stored as arrays of objects, allowing:
+- Easy mapping in React
+- Filtering, sorting, and pagination using native JS
 
-#### 📚 **2. Core Object Models**
+#### 4. **Client-Side LocalStorage**
+Stores:
+- Recently viewed resources
+- Bookmarks
+- (In future) Preferences like theme mode or user history
 
-**Resource Object**  
-Defines uploaded academic material metadata like ID, title, tags, course, uploader, and file path.
-
-**Course Object**  
-Maps course codes to full course names to maintain consistency and simplify navigation.
-
-**Tag Object**  
-Represents predefined or user-defined tags for organizing and filtering resources.
-
----
-
-#### 📋 **3. Arrays for Listings**
-
-- Used to store and manage collections of resources, tags, or courses
-- Facilitates filtering, searching, and sorting operations
-- Supports rendering resource cards and other UI elements dynamically
-
----
-
-#### 💾 **4. LocalStorage (Client-Side Persistence)**
-
-- Used for non-essential personalization like recent views and bookmarks
-- Enables a more tailored experience without needing a database
-- Data is stored as JSON strings and parsed during runtime
-
----
+Lightweight, persistent, and works without backend storage.
 
 ### 🧠 Summary of Design Rationale
 
