@@ -164,12 +164,16 @@ npm run dev
 
 ---
 
+---
+
 ## 🚀 **5. Suggested Improvements**
 
-- 🔍 **Advanced Search** with filters and tags
-- 🔐 **User Authentication** for profiles and upload tracking
-- ⭐ **Rating and Review System** for resources
-- 📱 **Mobile Optimization** for better responsiveness
+- 🔍 **Advanced Search** with filters and tags  
+- 🔐 **User Authentication** for profiles and upload tracking  
+- ⭐ **Rating and Review System** for resources  
+- 📱 **Mobile Optimization** for better responsiveness  
+- ❓ **Quiz Format Support** for practice and self-assessment  
+- 🏷️ **Question Tagging System** to categorize questions by topics, difficulty, and exam patterns  
 
 ---
 
