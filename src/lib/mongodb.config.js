@@ -2,6 +2,8 @@ import { MongoClient } from "mongodb"
 import mongoose from "mongoose";
 
 const uri = process.env.MONGODB_URI
+console.log("MONGODB_URI:", uri);
+
 const options = {}
 
 let client;
