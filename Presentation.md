@@ -109,7 +109,6 @@ This section explains the architectural decisions and internal workings of the s
 
 ---
 
-Perfect! Here's the updated section with **both the local and live URLs** clearly mentioned:
 
 ---
 
@@ -165,7 +164,6 @@ npm run dev
 
 ---
 
-Let me know if you’d like this formatted as a collapsible section or need a PDF/export version!
 ## 🚀 **5. Suggested Improvements**
 
 - 🔍 **Advanced Search** with filters and tags
