@@ -135,6 +135,8 @@ Stores:
 
 Lightweight, persistent, and works without backend storage.
 
+---
+
 ### 🧠 Summary of Design Rationale
 
 | Design Element     | Reasoning                                                                 |
@@ -156,9 +158,6 @@ Lightweight, persistent, and works without backend storage.
 **❌ Cons:**
 - Relies on community moderation
 - No backend limits features like authentication or personalized dashboards
-
----
-
 
 ---
 
@@ -211,8 +210,6 @@ npm run dev
 
 - 🌐 **Live Production Site**: [https://acadvault.vercel.app](https://acadvault.vercel.app)  
   > Visit the deployed version online.
-
----
 
 ---
 
