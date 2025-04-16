@@ -82,19 +82,64 @@ This section explains the architectural decisions and internal workings of the s
 - **Open Contribution Workflow**  
   Clear `CONTRIBUTING.md`, beginner-friendly issues, and GitHub Actions for CI ensure a smooth dev experience.
 
-### 🗂️ Data Structures and Storage
+Sure! Here's the **revised “🗂️ Data Structures and Storage”** section **without the examples**, keeping it clean and concise while still being informative:
 
-- **Objects**  
-  For resource metadata like titles, tags, contributors, etc.
+---
 
-- **Arrays**  
-  To store lists of courses, uploads, and categories.
+### 🗂️ **Data Structures and Storage**
 
-- **JSON Files**  
-  Used for config-like data such as tag presets or course mappings.
+AcadVault2.0 leverages efficient and frontend-friendly data structures to keep the platform lightweight and responsive, especially in the absence of a backend.
 
-- **LocalStorage (Client-side)**  
-  Supports optional features like recent views or bookmarks without backend storage.
+---
+
+#### 📄 **1. JSON-Based Storage**
+
+**Used in:** `data/courses.json`, `data/resourceData.json`, `data/tags.json`  
+- Simple, static storage format ideal for static site generation (SSG)  
+- Easily parseable and editable  
+- Can be swapped out for API endpoints in the future
+
+---
+
+#### 📚 **2. Core Object Models**
+
+**Resource Object**  
+Defines uploaded academic material metadata like ID, title, tags, course, uploader, and file path.
+
+**Course Object**  
+Maps course codes to full course names to maintain consistency and simplify navigation.
+
+**Tag Object**  
+Represents predefined or user-defined tags for organizing and filtering resources.
+
+---
+
+#### 📋 **3. Arrays for Listings**
+
+- Used to store and manage collections of resources, tags, or courses
+- Facilitates filtering, searching, and sorting operations
+- Supports rendering resource cards and other UI elements dynamically
+
+---
+
+#### 💾 **4. LocalStorage (Client-Side Persistence)**
+
+- Used for non-essential personalization like recent views and bookmarks
+- Enables a more tailored experience without needing a database
+- Data is stored as JSON strings and parsed during runtime
+
+---
+
+### 🧠 Summary of Design Rationale
+
+| Design Element     | Reasoning                                                                 |
+|--------------------|--------------------------------------------------------------------------|
+| JSON files         | Lightweight, version-controlled, ideal for static frontend builds        |
+| Object arrays      | Easy integration with JavaScript and React components                    |
+| Tag & Course maps  | Enhance organization and enable filterable UI                            |
+| LocalStorage       | Offers a minimal client-side state layer for better UX                   |
+
+---
 
 ### ⚖️ Design & Technical Trade-offs
 
