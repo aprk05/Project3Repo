@@ -61,10 +61,6 @@ Join our [Discord Community](#) to:
 
 ---
 
-Absolutely! Here's a **refined version of the "How It Works" and "Implementation Details" sections** — now seamlessly integrated and organized just like in your original README style:
-
----
-
 ## 🔍 **3. Depth-wise Analysis**
 
 This section explains the architectural decisions, internal logic, and technical structuring behind **AcadVault2.0**.
