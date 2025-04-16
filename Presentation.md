@@ -211,12 +211,50 @@ npm run dev
 
 ## 🚀 **5. Suggested Improvements**
 
-- 🔍 **Advanced Search** with filters and tags  
-- 🔐 **User Authentication** for profiles and upload tracking  
-- ⭐ **Rating and Review System** for resources  
-- 📱 **Mobile Optimization** for better responsiveness  
-- ❓ **Quiz Format Support** for practice and self-assessment  
-- 🏷️ **Question Tagging System** to categorize questions by topics, difficulty, and exam patterns  
+To further enhance the functionality and academic value of AcadVault2.0, the following features are proposed for future versions:
+
+---
+
+- 🔍 **Advanced Search & Filtering**  
+  Enable users to search by course code, tags, resource type (notes, papers, reports), semester, or faculty.
+
+---
+
+- 🔐 **User Authentication**  
+  Implement login/logout and user profiles. This will enable:
+  - Upload tracking
+  - Personalized bookmarks
+  - Contributor recognition
+
+---
+
+- ⭐ **Rating and Review System**  
+  Allow students to upvote/downvote or leave feedback on resources, helping others find the most helpful materials.
+
+---
+
+- ❓ **Quiz Format Support (Planned)**  
+  Introduce a new content type for multiple-choice quizzes and self-assessment modules.  
+  This will:
+  - Allow students to create or upload quizzes
+  - Display quizzes using interactive components (e.g., select options, instant feedback)
+  - Track progress locally (initially with localStorage; expandable to backend later)
+
+---
+
+- 🏷️ **Question Tagging System (Planned)**  
+  Add the ability to tag uploaded question papers with metadata like:
+  - 📅 Year of exam
+  - 🧪 Type (Midsem, Endsem, Quiz, Lab test)
+  - 📚 Course topics or concepts covered
+  - ⚙️ Difficulty level (Easy, Medium, Hard)
+
+  These tags will make old papers more searchable, sortable, and user-relevant.
+
+---
+
+- 📱 **Mobile Optimization & PWA**  
+  Optimize for mobile screens and consider turning the platform into a Progressive Web App for offline access.
 
 ---
 
