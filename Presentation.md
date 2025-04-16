@@ -109,6 +109,10 @@ This section explains the architectural decisions and internal workings of the s
 
 ---
 
+Perfect! Here's the updated section with **both the local and live URLs** clearly mentioned:
+
+---
+
 ## 🛠️ **4. How to Run the Software**
 
 Follow these steps to set up and run AcadVault2.0 locally:
@@ -153,10 +157,15 @@ npm install
 npm run dev
 ```
 
-Now visit [http://localhost:3000](http://localhost:3000) to view the app.
+- ✅ **Local Development URL**: [http://localhost:3000](http://localhost:3000)  
+  > View the app running on your local machine.
+
+- 🌐 **Live Production Site**: [https://acadvault.vercel.app](https://acadvault.vercel.app)  
+  > Visit the deployed version online.
 
 ---
 
+Let me know if you’d like this formatted as a collapsible section or need a PDF/export version!
 ## 🚀 **5. Suggested Improvements**
 
 - 🔍 **Advanced Search** with filters and tags
