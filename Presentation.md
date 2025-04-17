@@ -260,9 +260,10 @@ To further enhance the functionality and academic value of AcadVault2.0, the fol
 
 ## 👥 **6. Team Members**
 
-- **[Your Name]**
-- **[Collaborator 1]**
-- **[Collaborator 2]**
+- **Parth Agrawal - 202401010**
+- **Abhijeet Kujur - 202401006**
+- **Heer Bhanushali - 202401066**
+- **Harsh Asnani - 202401062**
 
 ---
 
