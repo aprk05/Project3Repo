@@ -17,7 +17,7 @@ It acts as a collaborative vault where students can:
 - 📤 **Contribute** to the community
 - 💬 **Engage** through active discussions
 
-Our aim is to enhance collective learning and knowledge sharing.
+The aim is to enhance collective learning and knowledge sharing.
 
 ---
 
@@ -43,7 +43,7 @@ Users can upload materials with descriptions and tags. This promotes:
 - Community-driven content curation
 
 #### 📣 Community Engagement  
-Join our [Discord Community](#) to:
+Join the [Discord Community](#) to:
 - Discuss doubts and academic queries
 - Get advice from seniors
 - Stay informed about updates or events
@@ -233,7 +233,7 @@ To further enhance the functionality and academic value of AcadVault2.0, the fol
 
 ---
 
-- ❓ **Quiz Format Support (Planned)**  
+- ❓ **Quiz Format Support**  
   Introduce a new content type for multiple-choice quizzes and self-assessment modules.  
   This will:
   - Allow students to create or upload quizzes
@@ -242,7 +242,7 @@ To further enhance the functionality and academic value of AcadVault2.0, the fol
 
 ---
 
-- 🏷️ **Question Tagging System (Planned)**  
+- 🏷️ **Question Tagging System**  
   Add the ability to tag uploaded question papers with metadata like:
   - 📅 Year of exam
   - 🧪 Type (Midsem, Endsem, Quiz, Lab test)
@@ -261,9 +261,9 @@ To further enhance the functionality and academic value of AcadVault2.0, the fol
 ## 👥 **6. Team Members**
 
 - **Parth Agrawal - 202401010**
-- **Abhijeet Kujur - 202401006**
 - **Heer Bhanushali - 202401066**
 - **Harsh Asnani - 202401062**
+- **Abhijeet Kujur - 202401006**
 
 ---
 
